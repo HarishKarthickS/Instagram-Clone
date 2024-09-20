@@ -1,4 +1,3 @@
-
 const { where } = require("sequelize");
 const { Op } = require("sequelize")
 const { Post, User, Like, Comment, sequelize, Follow } = require("../models");

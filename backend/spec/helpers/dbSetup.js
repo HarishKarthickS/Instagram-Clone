@@ -1,4 +1,3 @@
-
 // spec/helpers/dbSetup.js
 const { sequelize } = require('../../models');
 const { server } = require('../../app');

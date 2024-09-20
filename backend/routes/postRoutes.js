@@ -1,4 +1,3 @@
-
 const express = require("express");
 const router = express.Router();
 const { createPost, deletePost, validateCreatePost, getFollowingPost, getAllPost, likePost, unlikePost, getComments, addComment } = require("../controllers/postController.js");

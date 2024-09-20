@@ -1,4 +1,3 @@
-
 // spec/testFile4.spec.js
 const request = require('supertest');
 const { User } = require('../models');

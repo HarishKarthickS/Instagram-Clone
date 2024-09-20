@@ -1,4 +1,3 @@
-
 // spec/testFile1.spec.js
 const request = require('supertest');
 const { User, Post, Comment, Like, Follow } = require('../models');

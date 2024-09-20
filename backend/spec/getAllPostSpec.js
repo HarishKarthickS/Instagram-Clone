@@ -1,4 +1,3 @@
-
 const request = require('supertest');
 const { User, Post, Comment, Like } = require('../models');
 const { app } = require('../app');

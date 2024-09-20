@@ -1,4 +1,3 @@
-
 const { User, Post, Comment, Like, Follow } = require('../models');
 const request = require('supertest');
 const { app } = require('../app');
@@ -128,3 +127,4 @@ describe('Following Posts API', () => {
         expect(response.body).toEqual([]);
     });
 });
+

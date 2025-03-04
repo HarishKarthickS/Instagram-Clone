@@ -20,8 +20,6 @@ A creative social platform that goes beyond traditional photo sharing. SnapShare
 - Authentication: JWT with OAuth2
 - Styling: Tailwind CSS
 - Real-time: Socket.io
-- Cloud Storage: AWS S3
-- AI Integration: TensorFlow.js
 
 ## 🛠️ Getting Started
 
@@ -30,7 +28,6 @@ A creative social platform that goes beyond traditional photo sharing. SnapShare
 - Node.js (v14 or higher)
 - MongoDB
 - npm or yarn
-- AWS Account (for cloud storage)
 
 ### Installation
 

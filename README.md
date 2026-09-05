@@ -1,99 +1,63 @@
 # SnapShare
 
-A creative social platform that goes beyond traditional photo sharing. SnapShare is designed for storytellers, artists, and anyone who wants to share their world in a unique way. Built with modern web technologies, it offers an immersive experience for sharing moments and connecting with others.
+**ARCHIVED** — bootcamp photo-share (milestone-day-35); frozen as-is, not under active development.
 
-## 🌟 Features
+Bootcamp photo-sharing app: sign up or Google login, then create posts, comments, likes, and follows. It is not a live-streaming, AI, or TypeScript/Mongo product.
 
-- 🎨 Creative photo and video sharing with unique filters and effects
-- 📖 Storytelling through interactive posts and collections
-- 👥 Meaningful connections through interest-based communities
-- 💫 AI-powered content suggestions
-- 🎵 Music integration for posts and stories
-- 📱 Seamless cross-platform experience
-- 🔒 Privacy-first approach with granular sharing controls
+The only published git branch is `milestone-day-35` (GitHub default). There is no `main` branch on the remote.
 
-## 🚀 Tech Stack
+## What it actually does
 
-- Frontend: React.js with TypeScript
-- Backend: Node.js with Express
-- Database: MongoDB
-- Authentication: JWT with OAuth2
-- Styling: Tailwind CSS
-- Real-time: Socket.io
+- Email/password register and login (JWT)
+- Google Sign-In on the frontend
+- Posts, comments, likes, and follow/unfollow
+- Profile pages and a following feed
 
-## 🛠️ Getting Started
+## Stack
 
-### Prerequisites
+- Frontend: Create React App (JavaScript), Chakra UI, Tailwind, `@react-oauth/google`
+- Backend: Express
+- Database: SQLite via Sequelize (not MongoDB)
+- Root npm package name: `instagram-webapp`
 
-- Node.js (v14 or higher)
-- MongoDB
-- npm or yarn
+There is no Socket.io, no TypeScript app code, and no MongoDB.
 
-### Installation
+## Default branch
 
-1. Clone the repository
+Clone and check out `milestone-day-35`. Setting `main` as the GitHub default was not possible while that was the only branch.
+
+## Getting started
+
+Prerequisites: Node.js. SQLite is created locally; you do not need MongoDB.
+
 ```bash
-git clone https://github.com/yourusername/snapshare.git
+git clone -b milestone-day-35 https://github.com/HarishKarthickS/SnapShare.git
+cd SnapShare
 ```
 
-2. Install dependencies
+Frontend env (Create React App — copy into `frontend/.env`):
+
 ```bash
-cd snapshare
-npm install
+cp .env.example frontend/.env
 ```
 
-3. Set up environment variables
-```bash
-cp .env.example .env
+Set `REACT_APP_GOOGLE_CLIENT_ID` to your Google OAuth web client ID. Do not commit real client IDs.
+
+Backend env (copy into `backend/.env`):
+
+```
+JWT_SECRET=change-me
 ```
 
-4. Start the development server
+Install and run (root scripts, two terminals):
+
 ```bash
-npm run dev
+npm run frontend
+npm run backend
 ```
 
-## 📱 Features in Detail
+The backend script downloads a sample SQLite file into `backend/data/` and starts Express on port 5000. The frontend is `react-scripts start` (typically port 3000). There is no `npm run dev` at the repo root.
 
-### Creative Tools
-- Advanced photo editing suite
-- Custom filter creation
-- Story templates
-- Collaborative posts
-- Interactive polls and quizzes
+## License
 
-### Social Features
-- Interest-based communities
-- Live streaming with audience interaction
-- Collaborative story creation
-- Private sharing circles
-- Event planning and coordination
-
-### Personalization
-- AI-powered feed customization
-- Smart content organization
-- Personalized recommendations
-- Custom themes and layouts
-- Activity insights and analytics
-
-## 🤝 Contributing
-
-We welcome creative minds! Whether you're a developer, designer, or content creator, we'd love to have you contribute to SnapShare. Please check our contributing guidelines and submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Authors
-
-- Harish Karthick S - Lead Developer
-
-## 🙏 Acknowledgments
-
-- Our amazing community of early adopters
-- Open source contributors
-- Design inspiration from various creative platforms
-- The web development community
-
----
-
-Made with ❤️ by Harish Karthick S
+See the repository for license details if a LICENSE file is present.
